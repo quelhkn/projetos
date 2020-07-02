@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width">
+			<title>Contato - Barbearia do Zé </title>
+			<link rel="stylesheet" href="reset.css">
+			<link rel="stylesheet" href="produtos.css">
+
+		</head>
+		<body>
+			<header>
+				<div class="caixa">
+					<h1><img src="img/logo.png"></h1>
+
+					<nav>
+					<ul class="navegacao">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+					</nav>             
+				</div> 
+			</header>
+
+			<main class="form">
+				<form>
+					<label for="nome">Nome e Sobrenome: </label>
+					<input type="text" id="nome" class="input-padrao" required>
+
+					<label for="email">E-mail</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="97" rows="10" id="mensagem"></textarea>
+					<fieldset>
+						<br>
+						<legend >Como prefere nosso contato?</legend>
+
+						<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+						
+
+						<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+						
+
+						<label for="radio-wpp"><input type="radio" name="contato" value="wpp" id="radio-wpp">WhatsApp</label>
+						
+					</fieldset>
+
+					<fieldset>
+						<legend>Qual horário prefere ser atendido?</legend>
+						<select>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+						</select>
+					</fieldset>
+
+					<label class="checkbox"><input type="checkbox" required> Gostaria de receber nossas novidades por e-mail?</label></label>
+
+					<input type="submit" value="Enviar" class="enviar">
+				</form>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Dia</th>
+							<th>Horário</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Segunda</td>
+							<td>9h ~ 20h</td>
+						</tr>
+					</tbody>
+					<tr>
+						<td>Quarta</td>
+						<td>9h ~ 20h</td>
+				</tr>
+
+					<tr>
+						<td>Sexta</td>
+						<td>9h ~ 20h</td>
+				</tr>
+
+				</table>
+				
+			</main>
+
+			<footer>
+					<img src="img/logo-branco.png">
+					<p class="copyright">&copy;Copyright Barbearia do Zé</p>
+				</footer>
+
+		</body>
+</html>
