@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background: black;
+            color: blanchedalmond;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>oi blabla bla</h1>
+    <p> resultado</p>
+    <p> usando o <strong>DOM</strong> no js</p>
+    <div id="oi"> clíque aqui</div>
+    <div class name="s">bla</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0] // seleciona a tag e o [] seleciona qual tag qnd tem mais de uma 0=primeira tag
+
+        window.document.write( p1.innerText )  // var.innerText mostra texto
+
+        var d = document.getElementById('oi')
+        d.style.background='red'
+        //d.innerText='lets..'
+        b= document.getElementsByName('s').innerText
+        //b.style.background='blue'
+    </script>
+
+</body>
+</html>
